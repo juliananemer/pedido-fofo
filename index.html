@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Uma pergunta...</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- PRIMEIRA TELA -->
+    <div class="container" id="pergunta">
+
+        <div class="coracao">♡</div>
+
+        <h1>Você quer namorar comigo?</h1>
+
+        <div class="botoes">
+
+            <button id="sim">Sim</button>
+
+            <button id="nao">Não</button>
+
+        </div>
+
+    </div>
+
+
+    <!-- SEGUNDA TELA -->
+    <div class="container final" id="final" style="display: none;">
+
+        <img src="buque.png" alt="Buquê de tulipas">
+
+        <h1>Agora estamos namorando! ❤️</h1>
+
+        <p>Te amo! 🥹💕</p>
+
+        <div class="coracoes">
+            ♡ ♥ ♡ ♥ ♡
+        </div>
+
+        <div class="player-musica">
+
+            <button id="botaoMusica">♥</button>
+
+            <span id="tempo">0:00 / 0:00</span>
+
+            <audio id="musica" loop>
+                <source src="./musica.wav" type="audio/wav">
+            </audio>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

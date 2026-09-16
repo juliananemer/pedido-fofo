@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Agora estamos namorando ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container final">
+
+        <img src="buque.png" alt="Buquê de tulipas">
+
+        <h1>Agora estamos namorando! ❤️</h1>
+
+        <p>Te amo! 🥹💕</p>
+
+        <div class="coracoes">
+            ♡ ♥ ♡ ♥ ♡
+
+    </div>
+
+</body>
+<div class="player-musica">
+    <button id="botaoMusica">♥</button>
+
+    <span>nossa música ❤️</span>
+
+    <audio id="musica" loop>
+        <source src="./musica.wav" type="audio/wav">
+    </audio>
+</div>
+
+<script>
+    const musica = document.getElementById("musica");
+    const botao = document.getElementById("botaoMusica");
+
+    botao.addEventListener("click", function() {
+        if (musica.paused) {
+            musica.play();
+            botao.innerHTML = "❚❚";
+        } else {
+            musica.pause();
+            botao.innerHTML = "♥";
+        }
+    });
+</script>
+</html>
